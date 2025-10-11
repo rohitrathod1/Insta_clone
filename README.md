@@ -58,44 +58,25 @@ This application allows users to **register, post photos, like, comment, follow/
 
 ---
 
-## ⚙️ Project Structure
+## 🌐 Deployment
 
-insta_clone/
-├── backend/
-│ ├── index.js
-│ ├── routes/
-│ ├── utils/
-│ └── socket/
-├── frontend/
-│ ├── src/
-│ ├── dist/ (after build)
-│ └── package.json
-├── screenshots/
-│ ├── login.png
-│ ├── home.png
-│ ├── profile.png
-│ └── chat.png
-└── package.json
+- Backend serves the frontend build automatically using Express.  
+- Access both API endpoints and frontend UI from the same base URL after deployment.
 
-🌐 Deployment
+---
 
-Backend serves the frontend build automatically using Express.
+## 💡 Future Enhancements
 
-Access both API endpoints and frontend UI from the same base URL after deployment.
+- Add notifications for likes and comments  
+- Implement image compression and cloud storage (Cloudinary)  
+- Add stories and reels section  
+- Improve real-time performance  
 
-💡 Future Enhancements
+---
 
-Add notifications for likes and comments
+## 👨‍💻 Author
 
-Implement image compression and cloud storage (Cloudinary)
-
-Add stories and reels section
-
-Improve real-time performance
-
-👨‍💻 Author
-
-Rohit Rathod
-💼 Full Stack Web Developer (MERN)
-📧 [Your Email Here]
-🌐 [Your Portfolio or LinkedIn Here]
+**Rohit Rathod**  
+💼 Full Stack Web Developer (MERN)  
+📧 [rohitrathod6132@gmail.com]  
+🌐 []
