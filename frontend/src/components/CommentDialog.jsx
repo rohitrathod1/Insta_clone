@@ -16,7 +16,7 @@ const CommentDialog = ({ open, setOpen }) => {
     const [comment, setComment] = useState([]);
     const dispatch = useDispatch();
 
-    const BASE_URL = 'http://localhost:3000/api/v1/post';
+    const BASE_URL = 'https://insta-web-page.onrender.com/api/v1/post';
 
     // Load comments from selectedPost
     useEffect(() => {

@@ -24,7 +24,7 @@ const ChatPage = () => {
 
     try {
       const res = await axios.post(
-        `http://localhost:3000/api/v1/message/send/${receiverId}`,
+        `https://insta-web-page.onrender.com/api/v1/message/send/${receiverId}`,
         { textMessage: originalMessage },
         {
           headers: { 'Content-Type': 'application/json' },

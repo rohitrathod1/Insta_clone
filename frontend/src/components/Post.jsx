@@ -30,7 +30,7 @@ const Post = ({ post }) => {
     try {
       const action = liked ? 'dislike' : 'like';
       // NOTE: Using localhost URL. Update this if deploying to production.
-      const res = await axios.get(`http://localhost:3000/api/v1/post/${post._id}/${action}`, { withCredentials: true });
+      const res = await axios.get(`https://insta-web-page.onrender.com/api/v1/post/${post._id}/${action}`, { withCredentials: true });
       if (res.data.success) {
         const updatedLikes = liked ? postLike - 1 : postLike + 1;
         setPostLike(updatedLikes);
@@ -58,7 +58,7 @@ const Post = ({ post }) => {
     try {
       // NOTE: Using localhost URL. Update this if deploying to production.
       const res = await axios.post(
-        `http://localhost:3000/api/v1/post/${post._id}/comment`,
+        `https://insta-web-page.onrender.com/api/v1/post/${post._id}/comment`,
         { text },
         {
           headers: { 'Content-Type': 'application/json' },
@@ -85,7 +85,7 @@ const Post = ({ post }) => {
   const deletePostHandler = async () => {
     try {
       // NOTE: Using localhost URL. Update this if deploying to production.
-      const res = await axios.delete(`http://localhost:3000/api/v1/post/delete/${post?._id}`, { withCredentials: true })
+      const res = await axios.delete(`https://insta-web-page.onrender.com/api/v1/post/delete/${post?._id}`, { withCredentials: true })
       if (res.data.success) {
         const updatedPostData = posts.filter((postItem) => postItem?._id !== post?._id);
         dispatch(setPosts(updatedPostData));
@@ -100,7 +100,7 @@ const Post = ({ post }) => {
   const bookmarkHandler = async () => {
     try {
       // NOTE: Using localhost URL. Update this if deploying to production.
-      const res = await axios.get(`http://localhost:3000/api/v1/post/${post?._id}/bookmark`, { withCredentials: true });
+      const res = await axios.get(`https://insta-web-page.onrender.com/api/v1/post/${post?._id}/bookmark`, { withCredentials: true });
       if (res.data.success) toast.success(res.data.message);
     } catch (error) {
       console.log(error);

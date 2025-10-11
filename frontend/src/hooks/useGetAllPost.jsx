@@ -17,7 +17,7 @@ const useGetAllPost = () => {
         const fetchAllPost = async () => {
             try {
                 // withCredentials: true is correct for sending the HTTP-only cookie
-                const res = await axios.get('http://localhost:3000/api/v1/post/all', { withCredentials: true });
+                const res = await axios.get('https://insta-web-page.onrender.com/api/v1/post/all', { withCredentials: true });
                 if (res.data.success) { 
                     dispatch(setPosts(res.data.posts));
                 }

@@ -71,7 +71,7 @@ const CreatePost = ({ open, setOpen }) => {
         try {
             setLoading(true);
             // Use a local/dynamic URL (better for development than the hardcoded render URL)
-            const BASE_URL = 'http://localhost:3000/api/v1/post/addpost'; 
+            const BASE_URL = 'https://insta-web-page.onrender.com/api/v1/post/addpost'; 
             
             const res = await axios.post(BASE_URL, formData, {
                 // 'Content-Type': 'multipart/form-data' is typically set automatically by the browser with FormData
