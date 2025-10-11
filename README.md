@@ -23,18 +23,17 @@ This application allows users to **register, post photos, like, comment, follow/
 ## 🧩 Screenshots
 
 **Login Page**  
-![Login Page]([./screenshots/login.png](https://github.com/rohitrathod1/Insta_clone/blob/main/Images/Screenshot%202025-10-11%20084927.png?raw=true))  
+![Login Page](https://github.com/rohitrathod1/Insta_clone/blob/main/Images/Screenshot%202025-10-11%20084927.png?raw=true)  
 
 **Home Feed**  
 ![Home Feed](https://github.com/rohitrathod1/Insta_clone/blob/main/Images/Screenshot%202025-10-10%20230915.png?raw=true)  
 
+**Real-Time Chat**  
+![Chat](https://github.com/rohitrathod1/Insta_clone/blob/main/Images/Screenshot%202025-10-10%20231012.png?raw=true)
+
 **Profile Page**  
 ![Profile Page](https://github.com/rohitrathod1/Insta_clone/blob/main/Images/Screenshot%202025-10-10%20230924.png?raw=true)  
 
-**Real-Time Chat**  
-![Chat]([./screenshots/chat.png](https://github.com/rohitrathod1/Insta_clone/blob/main/Images/Screenshot%202025-10-10%20231012.png?raw=true))  
-
-> Note: Replace image paths with your actual screenshots in the `screenshots/` folder.
 
 ---
 
