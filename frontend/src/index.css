@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* CLEAN LIGHT THEME (Default) */
+    --radius: 0.65rem;
+    --background: 0% 0% 100%; /* White */
+    --foreground: 222.2 47.4% 11.2%; /* Dark Text */
+
+    --card: 0% 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    /* Light Theme Primary - Soft Blue/Gray */
+    --primary: 217.2 91.2% 59.8%; 
+    --primary-foreground: 210 20% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 47.4% 11.2%;
+
+    /* Chart variables kept as is, but adjusted to HSL equivalent for consistency */
+    --chart-1: 10 70% 50%;
+    --chart-2: 200 50% 50%;
+    /* ... other unused variables removed for brevity/clean up ... */
+  }
+
+  .dark {
+    /* BEAUTIFUL DARK BLUE THEME (High Contrast) */
+    --background: 222.2 8.4% 4.9%; /* Deep Dark Background (Matches #030712 look) */
+    --foreground: 210 20% 98%; /* Bright Text */
+
+    --card: 222.2 8.4% 4.9%; 
+    --card-foreground: 210 20% 98%;
+
+    /* Primary (Accent) Color - Vercel/Modern Blue Accent */
+    --primary: 217.2 91.2% 59.8%; /* Bright Blue for buttons/links */
+    --primary-foreground: 222.2 47.4% 11.2%; /* Dark text on blue */
+
+    --secondary: 217.2 32.4% 12.9%; /* Darker gray for secondary elements */
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 217.2 32.4% 12.9%;
+    --muted-foreground: 215 20.4% 65.9%;
+
+    --accent: 217.2 32.4% 12.9%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 0 62.8% 30.8%;
+
+    --border: 217.2 32.4% 12.9%; /* Subtle dark border */
+    --input: 217.2 32.4% 12.9%;
+    --ring: 217.2 91.2% 59.8%; /* Ring matches Primary blue */
+
+    /* Sidebar variables removed as they are redundant if card/background is used */
+  }
+}
+body{
+  background-color: #030712;
+  color: white;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE10+ */
+  user-select: none;
+}
